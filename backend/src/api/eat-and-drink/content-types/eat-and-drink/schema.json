@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "eat_and_drinks",
+  "info": {
+    "singularName": "eat-and-drink",
+    "pluralName": "eat-and-drinks",
+    "displayName": "Eat & Drink"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

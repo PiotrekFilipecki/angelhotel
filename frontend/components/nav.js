@@ -1,21 +1,29 @@
-import React from "react"
+import React, {useState} from "react"
 import Link from "next/link"
+import Image from "next/image"
+import logo from "../public/logos/stradomhouselogo.png"
+import LanguageContext from "./buttons/LanguageContext";
+import LanguageSwitcher from "./buttons/LanguageSwitcher";
 
-const Nav = ({ categories }) => {
+const Nav = ({ categories, pages }) => {
+  const [language, setLanguage] = useState("en");
+  const provider = { language, setLanguage };
+  const [isActive, setActive] = useState("false");
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
   return (
-    <div>
-      <nav className="uk-navbar-container" data-uk-navbar>
-        <div className="uk-navbar-left">
-          <ul className="uk-navbar-nav">
-            <li>
-              <Link href="/">
-                <a>Strapi Blog</a>
-              </Link>
-            </li>
-          </ul>
+    <LanguageContext.Provider value={provider}>
+    <header>
+      <nav className={isActive ? "sidenav" : "sidenav opened"}>
+        <div className="">
+
+
+
         </div>
-        <div className="uk-navbar-right">
-          <ul className="uk-navbar-nav">
+        <div className="">
+          {/* <ul className="">
             {categories.map((category) => {
               return (
                 <li key={category.id}>
@@ -25,10 +33,37 @@ const Nav = ({ categories }) => {
                 </li>
               )
             })}
-          </ul>
+          </ul> */}
+
         </div>
       </nav>
-    </div>
+      <div className="button-wrapper">
+      <button onClick={handleToggle}>menu</button>
+      </div>
+      
+      <Link  href="/">
+                <Image
+                width={220}
+                height={66}
+
+      style={{
+        maxWidth: '100%',
+        height: 'auto',
+        
+      }}
+                  src={logo}
+                  />
+              </Link>
+              <div className="right-nav">
+                <LanguageSwitcher />
+                <Link className="reserve-button" href="/">
+                  reserve
+                </Link>
+              </div>
+    </header>
+    </LanguageContext.Provider>
+
+    
   )
 }
 

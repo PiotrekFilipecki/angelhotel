@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "bedrooms_and_lofts",
+  "info": {
+    "singularName": "bedrooms-and-loft",
+    "pluralName": "bedrooms-and-lofts",
+    "displayName": "Bedrooms & Loft",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Header": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "default": "Bedrooms & Loft"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid",
+      "required": true
+    }
+  }
+}

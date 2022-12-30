@@ -1,9 +1,15 @@
 import App from "next/app"
 import Head from "next/head"
-import "../assets/css/style.css"
+import "../assets/css/style.scss"
 import { createContext } from "react"
 import { fetchAPI } from "../lib/api"
 import { getStrapiMedia } from "../lib/media"
+// import { appWithTranslation } from 'next-i18next';
+// import { Merriweather } from '@next/font/google'
+// import { SourceSansPro } from '@next/font/google'
+
+// const merriweather = Merriweather({ subsets: ['latin'] })
+// const sanspro = SourceSansPro({ subsets: ['latin'] })
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({})
