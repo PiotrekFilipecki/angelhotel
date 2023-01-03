@@ -31,7 +31,7 @@ const Home = ({ articles, categories, homepage }) => {
         </video>
       </div>
       <section className="intro-section">
-        <div class="intro-section_content">
+        <div className="intro-section_content">
           {/* <h1>{homepage.attributes.header}</h1> */}
           <h2 className="section-heading_small">
             Welcome to Angel Stradom Hotel, located in the beautiful city of
@@ -49,7 +49,7 @@ const Home = ({ articles, categories, homepage }) => {
         <div className="bedrooms-image-container">
           <Image className="image" layout="fill" src={spa} />
         </div>
-        <div class="bedrooms-section_content">
+        <div className="bedrooms-section_content">
           <h2 className="section-heading">Bedrooms & loft</h2>
           <p>
             Our guest rooms are spacious and beautifully appointed, with
@@ -197,7 +197,7 @@ const Home = ({ articles, categories, homepage }) => {
             <Image className="image" layout="fill" src={office} />
           </div>
         </div>
-        <div class="cta-wrapper">
+        <div className="cta-wrapper">
           <Link className="cta cta-empty" href="/">
             spaces
           </Link>
