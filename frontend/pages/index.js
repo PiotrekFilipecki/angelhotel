@@ -8,12 +8,12 @@ import { fetchAPI } from "../lib/api";
 // import { useTranslation } from "next-i18next"
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
-import column1 from "../public/column1.png";
-import column2 from "../public/column2.png";
-import column3 from "../public/column3.png";
-import spa from "../public/spa.png";
-import spa2 from "../public/spa2.png";
-import office from "../public/office1.jpg";
+// import column1 from "../public/column1.png";
+// import column2 from "../public/column2.png";
+// import column3 from "../public/column3.png";
+// import spa from "../public/spa.png";
+// import spa2 from "../public/spa2.png";
+// import office from "../public/office1.jpg";
 
 const Home = ({ articles, categories, homepage }) => {
   // const router = useRouter()
@@ -40,14 +40,14 @@ const Home = ({ articles, categories, homepage }) => {
           </h2>
         </div>
         <div className="image-container">
-          <Image className="image" layout="fill" src={column1} />
-          <Image className="image" layout="fill" src={column2} />
-          <Image className="image" layout="fill" src={column3} />
+          <Image className="image" layout="fill" src="/column1.png" />
+          <Image className="image" layout="fill" src="/column2.png" />
+          <Image className="image" layout="fill" src="/column3.png" />
         </div>
       </section>
       <section className="bedrooms-section">
         <div className="bedrooms-image-container">
-          <Image className="image" layout="fill" src={spa} />
+          <Image className="image" layout="fill" src="/spa.png" />
         </div>
         <div className="bedrooms-section_content">
           <h2 className="section-heading">Bedrooms & loft</h2>
@@ -72,7 +72,7 @@ const Home = ({ articles, categories, homepage }) => {
         <h2 className="section-heading">Eat & drink</h2>
         <div className="dining-section_images">
           <div className="dining-section_images-card">
-            <Image className="image" layout="fill" src={column1} />
+            <Image className="image" layout="fill" src="/column1.png" />
             <h3>Gaia Restaurant</h3>
             <p>
               At Angel Stradom Hotel, we pride ourselves on offering the best in
@@ -85,7 +85,7 @@ const Home = ({ articles, categories, homepage }) => {
             </Link>
           </div>
           <div className="dining-section_images-card">
-            <Image className="image" layout="fill" src={column2} />
+            <Image className="image" layout="fill" src="/column2.png"/>
             <h3>John Dory Restaurant</h3>
             <p>
               At Angel Stradom Hotel, we pride ourselves on offering the best in
@@ -98,7 +98,7 @@ const Home = ({ articles, categories, homepage }) => {
             </Link>
           </div>
           <div className="dining-section_images-card">
-            <Image className="image" layout="fill" src={column3} />
+            <Image className="image" layout="fill" src="/column3.png" />
             <h3>Hedwig&apos;s Bar</h3>
             <p>
               At Angel Stradom Hotel, we pride ourselves on offering the best in
@@ -124,7 +124,7 @@ const Home = ({ articles, categories, homepage }) => {
         <h2 className="section-heading">SÓL wellness</h2>
         <div className="wellness-section_images">
           <div className="wellness-section_images-card">
-            <Image className="image" layout="fill" src={spa} />
+            <Image className="image" layout="fill" src="/spa.png"/>
             <h3>SPA</h3>
             <p>
               At Angel Stradom Hotel, we pride ourselves on offering the best in
@@ -137,7 +137,7 @@ const Home = ({ articles, categories, homepage }) => {
             </Link>
           </div>
           <div className="wellness-section_images-card">
-            <Image className="image" layout="fill" src={spa2} />
+            <Image className="image" layout="fill" src="/spa2.png" />
             <h3>Fitness</h3>
             <p>
               At Angel Stradom Hotel, we pride ourselves on offering the best in
@@ -191,10 +191,10 @@ const Home = ({ articles, categories, homepage }) => {
         </div>
         <div className="work-section_images">
           <div className="work-section_images-card">
-            <Image className="image" layout="fill" src={spa2} />
+            <Image className="image" layout="fill" src="/spa2.png" />
           </div>
           <div className="work-section_images-card">
-            <Image className="image" layout="fill" src={office} />
+            <Image className="image" layout="fill" src="/office1.png"/>
           </div>
         </div>
         <div className="cta-wrapper">

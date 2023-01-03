@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import Link from "next/link"
 import Image from "next/image"
-import logo from "../public/logos/stradomhouselogo.png"
+// import logo from "../public/logos/stradomhouselogo.png"
 import LanguageContext from "./buttons/LanguageContext";
 import LanguageSwitcher from "./buttons/LanguageSwitcher";
 
@@ -51,7 +51,7 @@ const Nav = ({ categories, pages }) => {
         height: 'auto',
         
       }}
-                  src={logo}
+      src="/logos/stradomhouselogo.png"
                   />
               </Link>
               <div className="right-nav">
