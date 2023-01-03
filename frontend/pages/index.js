@@ -99,7 +99,7 @@ const Home = ({ articles, categories, homepage }) => {
           </div>
           <div className="dining-section_images-card">
             <Image className="image" layout="fill" src={column3} />
-            <h3>Hedwig"s Bar</h3>
+            <h3>Hedwig's Bar</h3>
             <p>
               At Angel Stradom Hotel, we pride ourselves on offering the best in
               luxury accommodations and top-notch service. We look forward to
@@ -179,10 +179,10 @@ const Home = ({ articles, categories, homepage }) => {
           <div className="work-paragraph">
             <p>
               We are also located in a prime location, just a short distance
-              from some of Krakow"s top attractions. Explore the historic Old
+              from some of Krakow's top attractions. Explore the historic Old
               Town, visit the iconic Wawel Castle, or stroll through the
               beautiful gardens of the Planty Park. We are also located in a
-              prime location, just a short distance from some of Krakow"s top
+              prime location, just a short distance from some of Krakow's top
               attractions. Explore the historic Old Town, visit the iconic Wawel
               Castle, or stroll through the beautiful gardens of the Planty
               Park.
