@@ -1,23 +1,23 @@
 import Image from "next/image"
-import Link from 'next/link'
+import Link from "next/link"
 import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
-// import { useRouter } from 'next/router'
-// import { useTranslation } from 'next-i18next'
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// import { useRouter } from "next/router"
+// import { useTranslation } from "next-i18next"
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
-import column1 from '../public/column1.png'
-import column2 from '../public/column2.png'
-import column3 from '../public/column3.png'
-import spa from '../public/spa.png'
-import spa2 from '../public/spa2.png'
-import office from '../public/office1.jpg'
+import column1 from "../public/column1.png"
+import column2 from "../public/column2.png"
+import column3 from "../public/column3.png"
+import spa from "../public/spa.png"
+import spa2 from "../public/spa2.png"
+import office from "../public/office1.jpg"
 
 const Home = ({ articles, categories, homepage }) => {
   // const router = useRouter()
-  // const { t } = useTranslation('common')
+  // const { t } = useTranslation("common")
   return (
     <Layout categories={categories}>
       <Seo seo={homepage.attributes.seo} />
@@ -27,7 +27,7 @@ const Home = ({ articles, categories, homepage }) => {
           console.log(homepage.attributes.backgroundVideo.data.attributes.url)
         }
         <video autoPlay playsInline loop muted>
-          <source src="https://blossom-assets.s3.eu-central-1.amazonaws.com/video.mp4" type='video/mp4'/> 
+          <source src="https://blossom-assets.s3.eu-central-1.amazonaws.com/video.mp4" type="video/mp4"/> 
         </video>
       </div>
       <section className="intro-section">
@@ -104,7 +104,7 @@ const Home = ({ articles, categories, homepage }) => {
               layout="fill"
               src={column3}
               />
-              <h3>Hedwig's Bar</h3>
+              <h3>Hedwig"s Bar</h3>
               <p>At Angel Stradom Hotel, we pride ourselves on offering the best in luxury accommodations and top-notch service. We look forward to welcoming you to our beautiful property and helping you make the most of your stay in Krakow.</p>
               <Link className="readmore" href="/">
                   discover more
@@ -178,7 +178,7 @@ const Home = ({ articles, categories, homepage }) => {
             </div>
           </div>
           <div className="work-paragraph">
-            <p>We are also located in a prime location, just a short distance from some of Krakow's top attractions. Explore the historic Old Town, visit the iconic Wawel Castle, or stroll through the beautiful gardens of the Planty Park. We are also located in a prime location, just a short distance from some of Krakow's top attractions. Explore the historic Old Town, visit the iconic Wawel Castle, or stroll through the beautiful gardens of the Planty Park.</p>
+            <p>We are also located in a prime location, just a short distance from some of Krakow"s top attractions. Explore the historic Old Town, visit the iconic Wawel Castle, or stroll through the beautiful gardens of the Planty Park. We are also located in a prime location, just a short distance from some of Krakow"s top attractions. Explore the historic Old Town, visit the iconic Wawel Castle, or stroll through the beautiful gardens of the Planty Park.</p>
           </div>
         </div>
         <div className="work-section_images">
@@ -215,7 +215,7 @@ const Home = ({ articles, categories, homepage }) => {
 
 // export const getServerSideProps = async ({ locale }) => ({
 //   props: {
-//     ...await serverSideTranslations(locale, ['common']),
+//     ...await serverSideTranslations(locale, ["common"]),
 //   },
 // })
 
@@ -229,7 +229,7 @@ export async function getStaticProps() {
         hero: "*",
         seo: { populate: "*" },
         header: "*",
-        backgroundVideo: '*'
+        backgroundVideo: "*"
       },
     }),
   ])
