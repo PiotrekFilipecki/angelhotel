@@ -23,7 +23,7 @@ const Nav = ({ categories, pages }) => {
 
         </div>
         <div className="">
-          {/* <ul className="">
+          <ul className="">
             {categories.map((category) => {
               return (
                 <li key={category.id}>
@@ -33,7 +33,7 @@ const Nav = ({ categories, pages }) => {
                 </li>
               )
             })}
-          </ul> */}
+          </ul>
 
         </div>
       </nav>
