@@ -14,7 +14,7 @@ const Seo = ({ seo }) => {
     // Add title suffix
     metaTitle: `${seoWithDefaults.metaTitle} | ${siteName}`,
     // Get full image URL
-    shareImage: getStrapiMedia(seoWithDefaults.shareImage),
+    // shareImage: getStrapiMedia(seoWithDefaults.shareImage),
   }
 
   return (
@@ -33,13 +33,13 @@ const Seo = ({ seo }) => {
           <meta name="twitter:description" content={fullSeo.metaDescription} />
         </>
       )}
-      {fullSeo.shareImage && (
+      {/* {fullSeo.shareImage && (
         <>
           <meta property="og:image" content={fullSeo.shareImage} />
           <meta name="twitter:image" content={fullSeo.shareImage} />
           <meta name="image" content={fullSeo.shareImage} />
         </>
-      )}
+      )} */}
       {fullSeo.article && <meta property="og:type" content="article" />}
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
