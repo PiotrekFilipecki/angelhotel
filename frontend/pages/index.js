@@ -194,7 +194,7 @@ const Home = ({ articles, categories, homepage }) => {
             <Image className="image" layout="fill" src="/spa2.png" />
           </div>
           <div className="work-section_images-card">
-            <Image className="image" layout="fill" src="/office1.png"/>
+            <Image className="image" layout="fill" src="/office1.jpg"/>
           </div>
         </div>
         <div className="cta-wrapper">
