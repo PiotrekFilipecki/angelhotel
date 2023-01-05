@@ -206,6 +206,30 @@ const Home = ({ articles, categories, homepage }) => {
           </Link>
         </div>
       </section>
+      <section className="discover">
+        <div className="discover-wrapper">
+          <div className="discover-wrapper_gallery">
+            
+            <img className="discover-image"  src="/krk1.jpeg"/>
+            <img className="discover-image"  src="/krk2.jpeg"/>
+            <img className="discover-image"  src="/krk3.jpeg"/>
+            <img className="discover-image"  src="/krk4.jpeg"/>
+          </div>
+          <div className="discover-wrapper_content">
+            <div className="discover-wrapper_content-inner">
+              <h2 className="section-heading">
+                Discover
+              </h2>
+              <p>One of the first things that visitors notice about Kraków is its stunning architecture. The city is home to a number of beautiful churches and cathedrals, including the Wawel Cathedral, which dates back to the 14th century. The Old Town, with its cobblestone streets and medieval buildings, is a must-see for anyone visiting Kraków.</p>
+              <p>In addition to its rich history, Kraków is also home to a thriving arts scene. The city has a number of galleries and museums that showcase the work of both local and international artists. The National Museum in Kraków is a particular highlight, with its extensive collection of Polish art and artifacts.</p>
+              <p>But Kraków is not just a city for history and culture buffs. It is also a place for foodies, with a wide range of restaurants and cafes serving everything from traditional Polish cuisine to international fare.</p>
+              <Link className="readmore" href="/">
+              discover more
+            </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
